@@ -77,7 +77,7 @@ def takeCommand():
     except Exception as e: 
         # print(e)    
         print("Say that again please...")  
-        return "None"
+        return "none_"
     
     return query
 
@@ -123,6 +123,9 @@ if __name__ == "__main__":
 
         elif 'your name' in query:
             speak("My name is AiGenie")  
+            
+        elif 'none_' in query:
+            continue
 
         else:
                 chatgpt(query)
